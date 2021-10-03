@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Rainbow_School_System
 {
@@ -6,8 +7,15 @@ namespace Rainbow_School_System
     {
         static void Main(string[] args)
         {
-            Teacher t1 = new Teacher(1, "3", "3", "3"); 
-            //{ ID = 1, Name="Abdulaziz", Class="Math", Section="32434" };
+        
+
+            AllTeachers at = new AllTeachers();
+            at.ReadDataFromFile();
+            at.Display();
+
+            Teacher t1 = new Teacher(32, "Mohammad", "English", "9796");
+            at.AddTeacher(t1);
+
         }
     }
 }
