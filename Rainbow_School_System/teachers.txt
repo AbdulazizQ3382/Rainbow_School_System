@@ -2,7 +2,8 @@
 2, Ahmad, Logic Design, 34234
 4, Saleh, Science and space, 7688
 12, Hussam Ibrahim, Physics, 32342
-56, Abdulaziz alqahtani, Computer Netwroks, 5555
+56, Ashraf taha, Computer Networks, 1111
 11, Fazel, Web engineering, 4333
 66, Ahmad, English, 4533
 55, Mohammad Nasser, Intro to the web, 9999
+123, Majed alshehri, Geografics, 444

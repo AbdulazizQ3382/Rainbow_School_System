@@ -19,7 +19,7 @@ namespace Rainbow_School_System
             ReadDataFromFile();
         }
 
-        public void ReadDataFromFile()
+        private void ReadDataFromFile()
         {
             String line;
             try
@@ -66,7 +66,7 @@ namespace Rainbow_School_System
                 Console.WriteLine();
             }
         }
-        public void WriteDataToFile()
+        private void WriteDataToFile()
         {
             string[] teachersStr = new string[Teachers.Count()];
             int counter = 0;
@@ -86,7 +86,7 @@ namespace Rainbow_School_System
         }
 
         // the data we get from the text file are string so we need to conver it to a Teacher object
-        public Teacher ToTeacherType(string rawData)
+        private Teacher ToTeacherType(string rawData)
         {
             string[] splited = rawData.Split(',');
             
