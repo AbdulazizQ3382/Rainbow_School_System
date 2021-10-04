@@ -1,4 +1,6 @@
-4 Mohammad English 9796
-2 ewfwef wefwef ewfwef
-4 Mohammad English 9796
-32 Mohammad English 9796
+33,      khalid Ahmed,      Math,      34234
+2,     Ahmad,     Logic Design,     34234
+4,   Saleh,   Science and space,   7688
+12,    Hussam Ibrahim,    Physics,    32342
+56,  Abdulaziz alqahtani,  Computer Netwroks,  5555
+11, sqqw, wd, qwdq

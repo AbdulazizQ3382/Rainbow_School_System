@@ -23,7 +23,7 @@ namespace Rainbow_School_System
 
         public override string ToString()
         {
-            return $"{this.ID} {this.Name} {this.Class} {this.Section}";
+            return $"{this.ID}, {this.Name}, {this.Class}, {this.Section}";
         }
 
     }
