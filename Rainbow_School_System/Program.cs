@@ -31,7 +31,7 @@ namespace Rainbow_School_System
                     case '2':
                         Console.WriteLine("2) Search for a teacher depending on the ID");
                         Console.WriteLine("Enter the ID for the teacher you want.");
-                        int teacherID = Convert.ToInt32(Console.ReadLine());
+                        string teacherID = Console.ReadLine();
                         Teacher teacherData = teachers.GetTeacher(teacherID);
                         if (teacherData == null)
                         {
@@ -49,7 +49,7 @@ namespace Rainbow_School_System
                         Console.WriteLine("* Teacher Name.");
                         Console.WriteLine("* Teacher class.");
                         Console.WriteLine("* Teacher Section.");
-                        int dataID = Convert.ToInt32(Console.ReadLine());
+                        string dataID = Console.ReadLine();
                         string dataName = Console.ReadLine();
                         string dataClass = Console.ReadLine();
                         string dataSection = Console.ReadLine();
@@ -63,7 +63,7 @@ namespace Rainbow_School_System
                         Console.WriteLine("* Teacher Name.");
                         Console.WriteLine("* Teacher class.");
                         Console.WriteLine("* Teacher Section.");
-                        int IDsearch = Convert.ToInt32(Console.ReadLine());
+                        string IDsearch = Console.ReadLine();
                         string updatedName = Console.ReadLine();
                         string updatedClass = Console.ReadLine();
                         string updatedSection = Console.ReadLine();

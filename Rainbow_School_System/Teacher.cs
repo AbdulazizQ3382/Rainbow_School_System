@@ -8,12 +8,12 @@ namespace Rainbow_School_System
 {
     public class Teacher
     {
-        public int ID { get; set; }
+        public string ID { get; set; }
         public string Name { get; set; }
         public string Class { get; set; }
         public string Section { get; set; }
 
-        public Teacher(int ID, string Name, string Class, string Section )
+        public Teacher(string ID, string Name, string Class, string Section )
         {
             this.ID = ID;
             this.Name = Name;

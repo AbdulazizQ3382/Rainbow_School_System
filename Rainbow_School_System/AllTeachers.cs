@@ -48,7 +48,7 @@ namespace Rainbow_School_System
             }
             catch(FormatException e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine(e);
                 Console.WriteLine("There is somthing wrong with the format of the data, make sure the format should be in the file:");
                 Console.WriteLine("[teacher id], [teacher name], [teacher class], [teacher section]");
                 Console.WriteLine();
@@ -89,8 +89,8 @@ namespace Rainbow_School_System
         public Teacher ToTeacherType(string rawData)
         {
             string[] splited = rawData.Split(',');
-            int id = Convert.ToInt32(splited[0]);
-            return new Teacher(id, splited[1], splited[2], splited[3]);
+            
+            return new Teacher(splited[0].Trim(), splited[1].Trim(), splited[2].Trim(), splited[3].Trim());
         }
         public void AddTeacher(Teacher data)
         {
@@ -122,7 +122,7 @@ namespace Rainbow_School_System
 
         }
 
-        public Teacher GetTeacher(int ID)
+        public Teacher GetTeacher(string ID)
         {
             if (Teachers.Count == 0)
             {
@@ -132,7 +132,7 @@ namespace Rainbow_School_System
             return Teachers.Find((x) => x.ID == ID);
         }
 
-        public void UpdateTeacher(int ID, Teacher newData)
+        public void UpdateTeacher(string ID, Teacher newData)
         {
             Teacher data = GetTeacher(ID);
             if(data == null)
@@ -141,7 +141,7 @@ namespace Rainbow_School_System
                 Console.WriteLine();
                 return;
             }
-            int dataID = data.ID;
+            string dataID = data.ID;
             
             for(int i = 0; i < Teachers.Count; i++)
             {
